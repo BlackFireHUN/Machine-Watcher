@@ -1,2 +1,2 @@
 # Machine-Watcher
-Server perfomance monitoring, with web frontend writen in nodejs
+Server performance monitoring, with web frontend writen in nodejs
