@@ -1,2 +1,6 @@
 # Machine-Watcher
-Server performance monitoring, with web frontend writen in nodejs
+Server performance monitoring.
+
+currently only serving data in json format.
+
+front-end under development.
