@@ -12,7 +12,7 @@ var ping = require('jjg-ping');
 var uptime;
 setInterval(function() {
     var Client = require('uptime-robot');
-    var cl = new Client('m786256651-e225405eb28585e77ee744d5');
+    var cl = new Client('');
     cl.getMonitors({customUptimeRatio: [24]}, function (err, res) {
     if (err) throw err;
     uptime = res[0].customuptimeratio[0];
@@ -20,9 +20,9 @@ setInterval(function() {
 }, 1000);
 const app = express();
 app.use(cors());
-const privateKey = fs.readFileSync('/home/admin/conf/web/ssl.blackfirehun.ddns.net.key', 'utf8');
-const certificate = fs.readFileSync('/home/admin/conf/web/ssl.blackfirehun.ddns.net.crt', 'utf8');
-const ca = fs.readFileSync('/home/admin/conf/web/ssl.blackfirehun.ddns.net.ca', 'utf8');
+const privateKey = fs.readFileSync('', 'utf8');
+const certificate = fs.readFileSync('', 'utf8');
+const ca = fs.readFileSync('', 'utf8');
 
 const credentials = {
 	key: privateKey,
